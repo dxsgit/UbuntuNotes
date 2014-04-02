@@ -1,0 +1,4 @@
+
+#将自己的电脑作为http服务器
+
+python -m SimpleHTTPServer [port]
