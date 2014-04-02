@@ -1,0 +1,15 @@
+
+#安装qq
+
+sudo apt-get install pidgin
+
+#添加软件源地址
+sudo add-apt-repository ppa:lainme/pidgin-lwqq
+
+#更新软件源
+sudo apt-get update
+
+#安装软件
+sudo apt-get install pidgin-lwqq
+
+
