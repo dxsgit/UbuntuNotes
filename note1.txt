@@ -2,3 +2,39 @@
 #将自己的电脑作为http服务器
 
 python -m SimpleHTTPServer [port]
+
+#google 代理
+
+// Create Application
+dxswby1990 hhxx
+在浏览器输入: https://appengine.google.com/
+
+// 下载goagent客户端
+http://code.google.com/p/goagent/
+
+// 安装gtk托盘
+sudo apt-get install python-appindictor
+sudo apt-get install python-vte
+
+// 设置桌面快捷方式:
+GoAgent GTK.desktop
+
+/*****************************************************************************/
+Chromktop Entry]
+Type=Application
+Name=GoAgent GTK
+Comment=GoAgent GTK Launcher
+Categories=Network;Proxy;
+Exec=/usr/bin/env python "/home/dxs/app/goagent/local/goagent-gtk.py"
+Icon=/home/dxs/app/goagent/local/goagent-logo.png
+Terminal=false
+StartupNotify=true
+/*****************************************************************************/
+
+// 设置开机自动启动
+将GoAgent GTK.desktop 放在 ~/.config/ 下
+
+// 安装SwitchySharp插件
+
+//导入证书
+setings -> HTTPS/SSL(Manage certificates) -> Authorities -> import -> goagent/user/local/CA.crt
